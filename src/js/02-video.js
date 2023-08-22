@@ -12,5 +12,5 @@ const onVideo = function (data) {
 
 player.on('timeupdate', throttle(onVideo, 1000));
 
-const actualTime = JSON.parse(localStorage.getItem(VAULT_KEY))
+const actualTime = JSON.parse(localStorage.getItem(VAULT_KEY));
 player.setCurrentTime(actualTime);

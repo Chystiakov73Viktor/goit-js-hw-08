@@ -20,9 +20,10 @@ function onFormData(evt) {
 function onFopmSubmit(evt) {
   evt.preventDefault();
   console.log(formData);
-
+  
   evt.currentTarget.reset();
   localStorage.removeItem(STORED_KEY);
+  formData = {};
 }
 
 function reloadPage() {
